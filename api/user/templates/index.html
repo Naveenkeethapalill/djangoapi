@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="card" style="width: 18rem;">
+    {% for d in users %}
+    <div class="card-header">
+      Address Card
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Name : {{d.name}}</li>
+      <li class="list-group-item">Email : {{d.email}}</li>
+      <li class="list-group-item">Phone : {{d.phone}}</li>
+    </ul>
+    {% endfor %}
+  </div>
